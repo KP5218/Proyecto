@@ -1,0 +1,157 @@
+* 
+{
+    margin:0%;
+    padding:0%;
+}
+
+body
+{
+	  width:80rem;
+    height: 38rem;
+	  display:inline-block;
+    font-family:Arial, Helvetica, sans-serif;
+    
+    
+}
+
+header 
+{
+    padding: 1.49% 0;
+    height: 5%;
+    z-index: 1000;
+    position: relative;   
+}
+.logo
+{
+  height: 85px;
+}
+.img
+{
+    height: 110%;
+    margin-bottom: 5%;
+    margin-left: 10%;   
+}
+
+.title
+{
+    width: auto;
+    float: right;
+    margin-right: 20%;
+    margin-top: 1%;
+    font-size: 180%;
+
+}
+
+.menu ul {
+    display:flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: fixed;
+    
+}
+
+.menu
+{
+  margin-top: 5px;
+}
+.menu a {
+    display: block;
+    padding: 2.35em;/*ancho del menu*/
+    width: 6.07em; /*largo del menu*/
+    background-color:darkcyan;
+    text-decoration: none;
+    color: #fff;
+    
+    
+}
+.menu a:hover {
+    background-color:cadetblue;
+}
+.menu ul li ul {
+    display: none;
+}
+.menu ul li a:hover + ul, .menu ul li ul:hover {
+    display: block;
+}
+
+
+.ancho
+{
+    height: 3.8rem;
+    text-align:justify;
+}
+
+
+
+/* slider */
+.slider {
+  border-radius: 2px;
+  position: relative;
+  margin-top: 72px;
+  width: 1360px;
+  height:auto;
+}
+
+.slider ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+}
+
+.slider ul li  {
+  position: relative;
+  display: none;
+  height:367px;
+}
+
+.slider ul li img {
+  position:absolute;
+  height:30rem;
+  width: 100.42%;
+  object-fit:cover;
+}
+
+/* buttons */
+.slider .buttons  {
+  position: absolute;
+  top: 40%;
+  width:  100%;
+}
+.slider .buttons .next {
+  font-size: 2rem;
+  right: 0;
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  text-align: center;
+}    
+.slider .buttons .prev {
+  font-size: 2rem;
+  left: 0;
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  text-align: center;
+}   
+.slider .buttons .next:hover {
+  background: hsl(0, 0%, 25%);
+  color: hsl(0, 0%, 93%);
+}
+.slider .buttons .prev:hover {
+  background: hsl(0, 0%, 25%);
+  color: hsl(0, 0%, 93%);
+}
+
+/* slider animation */
+.slider ul li {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+
